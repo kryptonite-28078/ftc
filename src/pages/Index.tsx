@@ -1,7 +1,9 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Achievements from "@/components/Achievements";
+import FirstEndorsement from "@/components/FirstEndorsement";
 import Team from "@/components/Team";
+import BotSection from "@/components/BotSection";
 import Sponsors from "@/components/Sponsors";
 import Footer from "@/components/Footer";
 
@@ -11,6 +13,8 @@ const Index = () => {
       <Navigation />
       <Hero />
       <Achievements />
+      <FirstEndorsement />
+      <BotSection />
       <Team />
       <Sponsors />
       <Footer />
@@ -19,3 +23,4 @@ const Index = () => {
 };
 
 export default Index;
+

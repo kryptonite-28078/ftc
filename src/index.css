@@ -119,4 +119,73 @@
   .neon-border {
     box-shadow: 0 0 10px hsl(150 100% 50% / 0.3), inset 0 0 10px hsl(150 100% 50% / 0.1);
   }
+
+  /* Enhanced gradient animation */
+  @keyframes gradient-x {
+
+    0%,
+    100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+
+  .animate-gradient-x {
+    animation: gradient-x 3s ease infinite;
+  }
+
+  /* Shimmer effect */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s ease-in-out infinite;
+  }
+
+  /* Float animation for fun effects */
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Orange/FIRST glow for endorsement section */
+  .text-glow-orange {
+    text-shadow: 0 0 20px hsl(25 100% 50% / 0.6);
+  }
+
+  .box-glow-orange {
+    box-shadow: 0 0 40px hsl(25 100% 50% / 0.2);
+  }
+
+  /* Yellow/Sponsor glow */
+  .text-glow-yellow {
+    text-shadow: 0 0 20px hsl(45 100% 50% / 0.6);
+  }
+
+  .box-glow-yellow {
+    box-shadow: 0 0 40px hsl(45 100% 50% / 0.2);
+  }
 }

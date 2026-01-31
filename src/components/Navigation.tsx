@@ -23,15 +23,17 @@ const Navigation = () => {
   const navItems = [
     { label: "Home", id: "home" },
     { label: "Achievements", id: "achievements" },
+    { label: "FIRST", id: "first" },
     { label: "Team", id: "team" },
+    { label: "Sponsors", id: "sponsors" },
   ];
 
   return (
     <>
       <nav
         className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[95%] md:w-auto md:min-w-[600px] rounded-full border ${isScrolled
-            ? "bg-background/80 backdrop-blur-xl border-primary/20 shadow-[0_0_20px_rgba(0,255,136,0.1)]"
-            : "bg-transparent border-transparent"
+          ? "bg-background/80 backdrop-blur-xl border-primary/20 shadow-[0_0_20px_rgba(0,255,136,0.1)]"
+          : "bg-transparent border-transparent"
           }`}
       >
         <div className="px-6 py-3">
@@ -43,9 +45,9 @@ const Navigation = () => {
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/50 blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                <img src={logo} alt="Team Kryptonite Logo" className="relative h-8 w-8 object-contain" />
+                <img src={logo} alt="Team Kryptonite Logo" className="relative h-11 w-11 sm:h-12 sm:w-12 md:h-14 md:w-14 object-contain drop-shadow-[0_0_10px_rgba(0,255,136,0.5)]" />
               </div>
-              <span className="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">
+              <span className="font-bold text-base md:text-lg tracking-tight group-hover:text-primary transition-colors hidden sm:inline">
                 KRYPTONITE
               </span>
             </div>
@@ -62,12 +64,12 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="w-px h-6 bg-border mx-2" />
-              <Button
-                size="sm"
-                className="bg-primary text-black hover:bg-primary/90 rounded-full font-bold shadow-[0_0_10px_rgba(0,255,136,0.3)] hover:shadow-[0_0_20px_rgba(0,255,136,0.5)] transition-all"
+              <a
+                href="mailto:team.kryptonite.28078.ftc@gmail.com,Shauryasule17@gmail.com?subject=Contact%20Team%20Kryptonite"
+                className="inline-flex items-center justify-center h-9 px-3 text-sm bg-primary text-black hover:bg-primary/90 rounded-full font-bold shadow-[0_0_10px_rgba(0,255,136,0.3)] hover:shadow-[0_0_20px_rgba(0,255,136,0.5)] transition-all"
               >
                 Contact Us
-              </Button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -99,12 +101,12 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button
-              size="lg"
-              className="w-full bg-primary text-black hover:bg-primary/90 mt-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(0,255,136,0.3)]"
+            <a
+              href="mailto:team.kryptonite.28078.ftc@gmail.com,Shauryasule17@gmail.com?subject=Contact%20Team%20Kryptonite"
+              className="w-full inline-flex items-center justify-center h-11 px-8 bg-primary text-black hover:bg-primary/90 mt-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(0,255,136,0.3)]"
             >
               Contact Us
-            </Button>
+            </a>
           </div>
         </div>
       )}

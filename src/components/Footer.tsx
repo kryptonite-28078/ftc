@@ -11,24 +11,24 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* Brand Column */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <img src={logo} alt="Team Kryptonite" className="h-12 w-12 object-contain" />
+            <div className="flex items-center gap-4">
+              <img src={logo} alt="Team Kryptonite" className="h-16 w-16 sm:h-18 sm:w-18 md:h-20 md:w-20 object-contain drop-shadow-[0_0_15px_rgba(0,255,136,0.5)]" />
               <div>
-                <h3 className="font-bold text-xl tracking-tight text-white">TEAM KRYPTONITE</h3>
+                <h3 className="font-bold text-lg sm:text-xl tracking-tight text-white">TEAM KRYPTONITE</h3>
                 <p className="text-primary text-sm font-mono">#28078</p>
               </div>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
               Pushing the boundaries of robotics and engineering. Champions of APOC 2025.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3">
               <a
-                href="mailto:contact@teamkryptonite.com"
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 text-white/70 hover:bg-primary hover:text-black transition-all duration-300 hover:-translate-y-1"
+                href="mailto:team.kryptonite.28078.ftc@gmail.com,Shauryasule17@gmail.com?subject=Contact%20Team%20Kryptonite"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 text-white/70 hover:bg-primary hover:text-black transition-all duration-300 hover:-translate-y-1 text-sm"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm font-medium">Contact Us</span>
+                <span className="font-medium">Contact Us</span>
               </a>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
           <div>
             <h4 className="font-bold text-white mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
-              {["Home", "Achievements", "Team", "Sponsors"].map((item) => (
+              {["Home", "Achievements", "FIRST", "Team", "Sponsors"].map((item) => (
                 <li key={item}>
                   <a href={`#${item.toLowerCase().replace(" ", "-")}`} className="hover:text-primary transition-colors flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary/50 scale-0 group-hover:scale-100 transition-transform" />

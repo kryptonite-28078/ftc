@@ -1,34 +1,33 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Users } from "lucide-react";
 
-import aadharPhoto from "@/assets/team/aadhar-mandhotra.jpg";
-import aditiPhoto from "@/assets/team/aditi-gupta.jpg";
-import anayaPhoto from "@/assets/team/anaya-shah.jpg";
-import aravPhoto from "@/assets/team/arav-bhasin.jpg";
-import ahaanPhoto from "@/assets/team/ahaan-chapparwal.jpg";
-import aaryanPhoto from "@/assets/team/aaryan-modi.jpg";
-import advayPhoto from "@/assets/team/advay-dhoot.jpg";
-import aryanPhoto from "@/assets/team/aryan-vivek.jpg";
-import evanyaPhoto from "@/assets/team/evanya-chudgar.jpg";
-import kannanPhoto from "@/assets/team/kannan-sanjay.jpg";
-import yatharthPhoto from "@/assets/team/yatharth-jain.jpg";
-import zeusPhoto from "@/assets/team/zeus-wadia.jpg";
-import vedPhoto from "@/assets/team/ved-ramchand.jpg";
-import shauryaPhoto from "@/assets/team/shaurya-sule.jpg";
-import sakshamPhoto from "@/assets/team/saksham-loonker.jpg";
-import rehaanPhoto from "@/assets/team/rehaan-dhandia.jpg";
-import naishaPhoto from "@/assets/team/naishaa-bansal.jpg";
-import arnavPhoto from "@/assets/team/arnav-gupta.jpg";
+import aadharPhoto from "@/assets/team/AadharKr.jpeg";
+import aditiPhoto from "@/assets/team/AditiKr.jpeg";
+import anayaPhoto from "@/assets/team/AnayaKr.jpeg";
+import aravPhoto from "@/assets/team/AravKr.jpeg";
+import aaryanPhoto from "@/assets/team/AryanMKr.jpeg";
+import advayPhoto from "@/assets/team/AdvayKr.jpeg";
+import aryanPhoto from "@/assets/team/AryanVKr.jpg";
+import evanyaPhoto from "@/assets/team/EvanyaKr.jpeg";
+import kannanPhoto from "@/assets/team/KannanKr.jpeg";
+import yatharthPhoto from "@/assets/team/YatharthKr.jpeg";
+import zeusPhoto from "@/assets/team/ZeusKr.jpeg";
+import vedPhoto from "@/assets/team/VedKr.jpeg";
+import shauryaPhoto from "@/assets/team/ShauryaKr.jpeg";
+import sakshamPhoto from "@/assets/team/SakshamKr.jpeg";
+import rehaanPhoto from "@/assets/team/RehaanKr.jpeg";
+import naishaPhoto from "@/assets/team/NaishaaKr.jpg";
+import alainaPhoto from "@/assets/team/AlainaKr.jpeg";
 
 
 const teamMembers = [
   { name: "Aadhar Mandhotra", role: "Team Captain & Driver", initials: "AM", photo: aadharPhoto },
   { name: "Aditi Gupta", role: "Programming", initials: "AG", photo: aditiPhoto },
-  { name: "Alaina Goyal", role: "Programming & Outreach", initials: "AG2" },
+  { name: "Alaina Goyal", role: "Programming & Outreach", initials: "AG2", photo: alainaPhoto },
   { name: "Anaya Shah", role: "Programming", initials: "AS", photo: anayaPhoto },
   { name: "Arav Bhasin", role: "Programming", initials: "AB", photo: aravPhoto },
   { name: "Rehaan Dhandia", role: "Programming", initials: "RD", photo: rehaanPhoto },
-  { name: "Ahaan Chapparwal", role: "Programming", initials: "AC", photo: ahaanPhoto },
+  { name: "Ahaan Chapparwal", role: "Programming", initials: "AC" },
   { name: "Ved Ramchand", role: "Programming", initials: "VR", photo: vedPhoto },
   { name: "Aaryan Modi", role: "Mechanics", initials: "AM2", photo: aaryanPhoto },
   { name: "Advay Dhoot", role: "Mechanics", initials: "AD", photo: advayPhoto },
@@ -40,27 +39,27 @@ const teamMembers = [
   { name: "Yatharth Jain", role: "Mechanics", initials: "YJ", photo: yatharthPhoto },
   { name: "Zeus Wadia", role: "Mechanics", initials: "ZW", photo: zeusPhoto },
   { name: "Shaurya Sule", role: "Scouting Head & Mechanics Head", initials: "SS", photo: shauryaPhoto },
-  { name: "Arnav Gupta", role: "Mechanics", initials: "AG", photo: arnavPhoto },
+  { name: "Arnav Gupta", role: "Mechanics", initials: "AG" },
 ];
 
 const Team = () => {
   return (
-    <section id="team" className="py-24 px-4 bg-secondary/20">
+    <section id="team" className="py-16 sm:py-20 md:py-24 px-4 bg-secondary/20">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 mb-3 sm:mb-4 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
             <Users className="w-3 h-3" />
             The Team
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-white">
             Meet Our Team
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
+          <p className="text-muted-foreground text-sm sm:text-base md:text-lg max-w-2xl mx-auto font-light px-2">
             A diverse group of students united by a passion for robotics and innovation.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
           {teamMembers.map((member, index) => (
             <Card key={index} className="group relative overflow-hidden border border-white/5 bg-card transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(0,255,136,0.15)] hover:-translate-y-2">
               <div className="aspect-square relative overflow-hidden bg-secondary/50">
